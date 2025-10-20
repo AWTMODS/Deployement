@@ -15,8 +15,8 @@ This guide explains how to deploy your Node.js Telegram bot on any **VPS (HostGr
 
 ## ⚙️ 1. Connect to VPS
 
-```bash
-ssh root@YOUR_SERVER_IP
+bash
+ - ssh root@YOUR_SERVER_IP
 
 ---
 ## 🧩 2. Update & Install Essentials
