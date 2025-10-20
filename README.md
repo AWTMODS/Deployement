@@ -38,14 +38,14 @@ Check versions:
 node -v
 npm -v
 
-📦 3. Clone the Repository
+## 📦 3. Clone the Repository
 
 cd /root
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_BOT_REPO.git
 cd YOUR_BOT_REPO
 
 
-🔐 4. Create Environment File
+## 🔐 4. Create Environment File
 
 nano .env
 
@@ -56,15 +56,15 @@ OWNER_ID=123456789
 
 Save → CTRL + X, Y, then Enter.
 
-📚 5. Install Dependencies
+## 📚 5. Install Dependencies
 
 npm install
 
-🧪 6. Test the Bot
+## 🧪 6. Test the Bot
 
  node bot.js / node index.js
 
-🚀 7. Run the Bot 24/7 with PM2
+## 🚀 7. Run the Bot 24/7 with PM2
 
 npm install -g pm2
 pm2 start bot.js --name "yourbotname"
@@ -85,7 +85,7 @@ pm2 restart yourbotname
 Stop bot:
 pm2 stop yourbotname
 
-🔄 8. Update the Bot Later
+## 🔄 8. Update the Bot Later
 
 When you push new updates to GitHub:
 
@@ -93,7 +93,7 @@ cd /root/YOUR_BOT_REPO
 git pull
 pm2 restart yourbotname
 
-🔒 9. (Optional) Secure Your VPS
+## 🔒 9. (Optional) Secure Your VPS
 
 dnf install -y fail2ban
 systemctl enable --now fail2ban
@@ -106,7 +106,7 @@ nano /etc/ssh/sshd_config
 systemctl restart sshd
 
 
-🧰 Notes
+ ##🧰 Notes
 
 Default port for SSH: 22 (change for security)
 
@@ -116,7 +116,7 @@ For webhook setup, install nginx + certbot (optional)
 
 Use pm2 logs to debug issues anytime
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 
 YOUR NAME / TEAM
 Created with ❤️ using Node.js + Telegram API.
