@@ -99,3 +99,38 @@ dnf install -y fail2ban
 systemctl enable --now fail2ban
 
 
+Optional SSH security:
+passwd
+nano /etc/ssh/sshd_config
+# Change: Port 22 → Port 2200
+systemctl restart sshd
+
+
+🧰 Notes
+
+Default port for SSH: 22 (change for security)
+
+Bot token must remain secret
+
+For webhook setup, install nginx + certbot (optional)
+
+Use pm2 logs to debug issues anytime
+
+🧑‍💻 Author
+
+YOUR NAME / TEAM
+Created with ❤️ using Node.js + Telegram API.
+
+
+---
+
+### 🪶 How to Use
+1. Replace all placeholders (`YOUR_BOT_REPO`, `YOUR_GITHUB_USERNAME`, etc.) with your own details.  
+2. Add this text into your GitHub repo → `README.md`.  
+3. Every time you make a new bot, just copy-paste this file and change the repo name + environment variables.
+
+---
+
+Would you like me to make a **version with webhook setup (nginx + SSL)** section too, so it covers both polling and webhook bots?
+
+
